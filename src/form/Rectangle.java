@@ -26,4 +26,13 @@ public class Rectangle extends Square {
     public String toString() {
         return super.toString() + "width=" + width;
     }
+
+    @Override
+    public double area() {
+        return this.length*this.width;
+    }
+    @Override
+    public double perimeter() {
+        return 2*(this.length+this.width);
+    }
 }

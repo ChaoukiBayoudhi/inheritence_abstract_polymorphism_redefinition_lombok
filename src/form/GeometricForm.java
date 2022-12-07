@@ -7,7 +7,7 @@ import lombok.*;
 //@NoArgsConstructor //generates a no arguments constructor
 //@AllArgsConstructor //generates a constructor with all attributes as arguments
 //@ToString
-public class GeometricForm {
+public abstract class GeometricForm {
     private Long id;
     private static long lastId=0;
 
@@ -23,4 +23,6 @@ public class GeometricForm {
     public String toString() {
         return "id=" + id;
     }
+    public abstract double area();
+    public abstract double perimeter();
 }

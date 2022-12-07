@@ -17,4 +17,14 @@ public class Cercle extends Square {
                 "center = " + center +
                 '}';
     }
+
+    @Override
+    public double area() {
+        return Math.PI*this.length*this.length;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*Math.PI*this.length;
+    }
 }
