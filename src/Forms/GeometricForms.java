@@ -10,9 +10,18 @@ public class GeometricForms {//manage a list of GeometricForms
 
     public void listAll()
     {
-        for (GeometricForm geometricForm : lstGeometricForms) {
-            System.out.println(geometricForm);
+        for (GeometricForm x : lstGeometricForms) {
+            System.out.println(x);
         }
+        //or
+       for(int i=0;i<lstGeometricForms.size();i++)
+         {
+              System.out.println(lstGeometricForms.get(i));
+         }
+       //or
+        System.out.println(lstGeometricForms);
+       //or
+        lstGeometricForms.forEach(System.out::println);
     }
     public  boolean add(GeometricForm gf)
     {
